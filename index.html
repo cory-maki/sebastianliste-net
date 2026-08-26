@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Sebastian Liste | Documentary Photographer & Founder of PhotoDocumentarians | Spain</title>
+<meta name="description" content="Sebastian Liste is a documentary photographer published in National Geographic, TIME and The New Yorker, and the founder of PhotoDocumentarians, a mentorship platform for documentary photographers."/>
+<link rel="canonical" href="https://sebastianliste.netlify.app/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Sebastian Liste | Documentary Photographer & Founder of PhotoDocumentarians"/>
+<meta property="og:description" content="Sebastian Liste is a documentary photographer published in National Geographic, TIME and The New Yorker, and the founder of PhotoDocumentarians, a mentorship platform for documentary photographers."/>
+<meta property="og:image" content="https://sebastianliste.netlify.app/images/hero.jpg"/>
+<meta property="og:url" content="https://sebastianliste.netlify.app/"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sebastian Liste",
+  "jobTitle": "Documentary Photographer",
+  "url": "https://sebastianliste.netlify.app/",
+  "image": "https://sebastianliste.netlify.app/images/hero.jpg",
+  "description": "Sebastian Liste is a documentary photographer with a twenty-year record of work published in National Geographic, TIME, The New York Times and The New Yorker, and the founder of PhotoDocumentarians, a mentorship platform and global community for documentary photographers.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "ES"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "PhotoDocumentarians",
+    "url": "https://www.photodocumentarians.com/"
+  },
+  "memberOf": {
+    "@type": "Organization",
+    "name": "NOOR Images"
+  },
+  "sameAs": [
+    "https://www.photodocumentarians.com/",
+    "https://www.facebook.com/sebastian.liste",
+    "https://www.linkedin.com/in/sebastianliste/",
+    "https://www.instagram.com/sebastianliste",
+    "https://x.com/sebasliste"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Sebastian Liste",
+  "url": "https://sebastianliste.netlify.app/"
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Sebastian Liste';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-home'],soc);
+    render(['sml-news-home'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Sebastian<span> Liste</span></a>
+  <ul class="nav-links">
+    <li><a class="active" href="/">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<div class="h-hero">
+  <div class="h-inner">
+    <div class="h-photo"><img src="images/hero.jpg" alt="Sebastian Liste, documentary photographer"/></div>
+    <div>
+      <h1 class="h-name">Sebastian Liste</h1>
+      <p class="h-role">Documentary Photographer &amp; Founder of PhotoDocumentarians</p>
+      <p class="h-desc">Sebastian Liste is a documentary photographer whose work has appeared in National Geographic, TIME, The New York Times and The New Yorker. Over twenty years he has built long-term projects across the Americas, the Middle East, Africa, Asia and Europe, and, in parallel, founded PhotoDocumentarians, a mentorship platform that helps documentary photographers bring meaningful projects to publication, exhibition and funding.</p>
+      <div class="h-loc">Spain</div>
+    </div>
+  </div>
+</div>
+<div class="h-about">
+  <div class="ha-inner">
+    <div class="ha-text">
+      <p class="eyebrow">The Photographer Behind the Platform</p>
+      <h2 class="sec-title">A working practitioner who teaches from experience</h2>
+      <p>Sebastian Liste has spent two decades inside the communities he documents, working at the highest international level while quietly building one of documentary photography&rsquo;s most substantive teaching practices. His photographs have run in National Geographic, TIME and The New Yorker; his projects have been funded by the Pulitzer Center, the Magnum Foundation and the Getty Images Grant.</p>
+      <p>That record is the foundation of everything else. A member of NOOR Images and a Leica Ambassador, Sebastian teaches what he has done rather than what he theorizes, and <a href="about.html">his two decades of documentary work</a> inform every part of the platform he founded.</p>
+      <p>PhotoDocumentarians is the structured expression of that authority: a mentorship platform and global community built from fifteen years of teaching alongside a full working practice. It is the clearest answer to <a href="what-photodocumentarians-is.html">why he founded PhotoDocumentarians</a>, and it now welcomes photographers through <a href="https://www.photodocumentarians.com/" target="_blank" rel="noopener">the PhotoDocumentarians community</a>.</p>
+      <a class="ha-link" href="about.html">Learn more &rarr;</a>
+    </div>
+    <div><img class="ha-photo" src="images/hero-secondary.jpg" alt="Portrait of documentary photographer Sebastian Liste"/></div>
+  </div>
+</div>
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'sml-soc-homeb')">Follow Sebastian Liste on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="sml-soc-homeb"><div id="sml-soc-home" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'sml-news-homeb')">Sebastian Liste in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="sml-news-homeb"><div id="sml-news-home" class="social-media-list"></div></div>
+  </div>
+</div>
+<div class="h-press">
+  <div class="pi">
+    <p class="eyebrow">Writing &amp; Perspective</p>
+    <h2 class="sec-title">From the field and the mentorship</h2>
+    <div class="cards">
+      <a class="card card-article" href="what-photodocumentarians-is.html">
+        <div class="ct-img"><img src="images/article-1.jpg" alt="What PhotoDocumentarians Is and Why Sebastian Liste Built It"/></div>
+        <div class="cb"><div class="cb-pub">PhotoDocumentarians</div><div class="cb-hl">What PhotoDocumentarians Is and Why Sebastian Liste Built It</div><div class="cb-yr">May 2026</div></div>
+      </a>
+      <a class="card card-article" href="amazon-decade-long-project.html">
+        <div class="ct-img"><img src="images/article-2.jpg" alt="How Sebastian Liste&rsquo;s Work in the Amazon Became a Decade-Long Project"/></div>
+        <div class="cb"><div class="cb-pub">Long-Term Projects</div><div class="cb-hl">How Sebastian Liste&rsquo;s Work in the Amazon Became a Decade-Long Project</div><div class="cb-yr">March 2026</div></div>
+      </a>
+      <a class="card card-article" href="photodocumentarians-opens-global-community.html">
+        <div class="ct-img"><img src="images/article-3.jpg" alt="PhotoDocumentarians Opens to a Global Community of Documentary Photographers"/></div>
+        <div class="cb"><div class="cb-pub">Announcement</div><div class="cb-hl">PhotoDocumentarians Opens to a Global Community of Documentary Photographers</div><div class="cb-yr">June 2026</div></div>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="h-contact">
+  <div class="hc-inner">
+    <div>
+      <p class="eyebrow">Get in Touch</p>
+      <h2 class="sec-title">Contact</h2>
+      <form class="cf" onsubmit="return false">
+        <div><label>Your Name</label><input type="text" placeholder="Your name"/></div>
+        <div><label>Email</label><input type="email" placeholder="email@example.com"/></div>
+        <div><label>Message</label><textarea placeholder="Your message..."></textarea></div>
+        <button class="btn-sm" type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="hcp">
+      <h3 class="hc-title">Let&rsquo;s connect.</h3>
+      <p>For assignments, mentorship enquiries, exhibitions and speaking, reach Sebastian Liste through the contact page or the channels linked above.</p>
+    </div>
+  </div>
+</div>
+<footer>
+  <p>&copy; 2026 Sebastian Liste. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
