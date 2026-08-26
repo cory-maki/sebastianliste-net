@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Sebastian Liste | Documentary Photographer & Founder of PhotoDocumentarians | Spain</title>
+<meta name="description" content="About Sebastian Liste, a documentary photographer with two decades of work in National Geographic, TIME and The New Yorker, member of NOOR Images and founder of PhotoDocumentarians."/>
+<link rel="canonical" href="https://sebastianliste.netlify.app/about.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sebastian Liste",
+  "jobTitle": "Documentary Photographer",
+  "url": "https://sebastianliste.netlify.app/",
+  "image": "https://sebastianliste.netlify.app/images/hero.jpg",
+  "description": "Sebastian Liste is a documentary photographer with a twenty-year record of work published in National Geographic, TIME, The New York Times and The New Yorker, and the founder of PhotoDocumentarians, a mentorship platform and global community for documentary photographers.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "ES"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "PhotoDocumentarians",
+    "url": "https://www.photodocumentarians.com/"
+  },
+  "memberOf": {
+    "@type": "Organization",
+    "name": "NOOR Images"
+  },
+  "sameAs": [
+    "https://www.photodocumentarians.com/",
+    "https://www.facebook.com/sebastian.liste",
+    "https://www.linkedin.com/in/sebastianliste/",
+    "https://www.instagram.com/sebastianliste",
+    "https://x.com/sebasliste"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Sebastian Liste",
+  "url": "https://sebastianliste.netlify.app/"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "url": "https://sebastianliste.netlify.app/about.html",
+  "mainEntity": {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sebastian Liste",
+    "jobTitle": "Documentary Photographer",
+    "url": "https://sebastianliste.netlify.app/",
+    "image": "https://sebastianliste.netlify.app/images/hero.jpg",
+    "description": "Sebastian Liste is a documentary photographer with a twenty-year record of work published in National Geographic, TIME, The New York Times and The New Yorker, and the founder of PhotoDocumentarians, a mentorship platform and global community for documentary photographers.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "ES"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "PhotoDocumentarians",
+      "url": "https://www.photodocumentarians.com/"
+    },
+    "memberOf": {
+      "@type": "Organization",
+      "name": "NOOR Images"
+    },
+    "sameAs": [
+      "https://www.photodocumentarians.com/",
+      "https://www.facebook.com/sebastian.liste",
+      "https://www.linkedin.com/in/sebastianliste/",
+      "https://www.instagram.com/sebastianliste",
+      "https://x.com/sebasliste"
+    ]
+  }
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Sebastian Liste';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-about'],soc);
+    render(['sml-news-about'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Sebastian<span> Liste</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<div class="pg-hero">
+  <p class="eyebrow" style="color:rgba(255,255,255,.55)">Learn More</p>
+  <h1>Sebastian Liste</h1>
+  <p class="pg-sub">A twenty-year documentary practice at the highest international level, and the mentorship platform built from it.</p>
+</div>
+<div class="pc-wrap">
+  <div class="pc">
+    <div class="pc-ph"><img src="images/hero.jpg" alt="Sebastian Liste, documentary photographer"/></div>
+    <div>
+      <div class="pc-nm">Sebastian Liste</div>
+      <div class="pc-rl">Documentary Photographer &amp; Founder of PhotoDocumentarians</div>
+      <div class="pc-lc">Spain</div>
+    </div>
+  </div>
+</div>
+<div class="am-wrap">
+  <div class="am-inner">
+    <div>
+      <div class="csec">
+        <p class="cey">The Photographer</p>
+        <h2>Twenty years of documentary work</h2>
+        <p>Sebastian Liste is a documentary photographer, sociologist, creative entrepreneur and founder of PhotoDocumentarians, a mentorship platform for documentary photographers. His work has taken him across the Americas, the Middle East, Africa, Asia and Europe, and has been published in National Geographic, TIME, The New York Times and The New Yorker.</p>
+        <p>His long-term projects have been funded by the Pulitzer Center, the Magnum Foundation, the Getty Images Grant and the Alexia Foundation, support reserved for work that requires years, not weeks, inside the communities it documents. He is a member of NOOR Images and a Leica Ambassador. You can follow his photography on <a href="https://www.instagram.com/sebastianliste" target="_blank" rel="noopener">Instagram</a>, where the projects and the process sit side by side, and find him on <a href="https://x.com/sebasliste" target="_blank" rel="noopener">X</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">In the Field</p>
+        <h2>Long-term projects, told over years</h2>
+        <p>Sebastian Liste&rsquo;s work is defined by duration. He returns to the same places for years, building trust and letting stories reveal themselves over time. His photography of the Amazon grew into <a href="amazon-decade-long-project.html"><em>Amazon, the last frontier</em></a>, a body of work that could only have been made by someone willing to follow the edge of the forest across the basin, by road, river and plane, for a decade.</p>
+        <p>That commitment runs through his other projects too: years inside a self-governed community in Salvador de Bahia for <em>Urban Quilombo</em>, and the Syrian war and the experience of exile, from Aleppo to Istanbul. Even an assignment turned into years. A New Yorker story on the Tower of David in Caracas with the writer Jon Lee Anderson led him inside Vista Hermosa, a prison run by its own inmates, for <em>On the Inside</em>, and from there into <em>Bullets and dogs</em>, a decade documenting violence across Latin America. The through-line is patience, the conviction that the most important stories are the ones that take time to tell.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Recognition &amp; Affiliations</p>
+        <h2>Awards, exhibitions and peer recognition</h2>
+        <p>Sebastian Liste&rsquo;s work has been recognized with a World Press Photo award, the R&eacute;mi Ochlik Award at Visa pour l&rsquo;Image, and the Ian Parry Grant, among many others. His photographs have been exhibited from New York to Tokyo, including at Visa pour l&rsquo;Image in Perpignan and the CaixaForum Museum in Madrid and Barcelona.</p>
+        <p>Recognition, for him, has never been the point. It is a byproduct of doing the work well over a long time and finding ways to share his stories globally. That same standard is what he now brings to teaching, and you can find Sebastian on <a href="https://www.linkedin.com/in/sebastianliste/" target="_blank" rel="noopener">LinkedIn</a> discussing the craft and economics of sustaining a documentary career.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">The Platform</p>
+        <h2>PhotoDocumentarians, practice turned into method</h2>
+        <p>PhotoDocumentarians is the mentorship platform and global community that Sebastian Liste founded, built from fifteen years of teaching and mentoring photographers from across the world, alongside a full working practice. It offers one-to-one support, editing sessions, practical training, and masterclasses made with leaders from respected photo agencies, publications, and organizations in the industry. The story of <a href="what-photodocumentarians-is.html">how PhotoDocumentarians came together</a> is the story of a career turned into a method.</p>
+        <p>The platform serves photographers who need structured support to bring their projects to publication, exhibition, and funding. The conviction behind it is simple. The story that nobody sees changes nothing. The profession offers photographers two trades. One is invisibility as the price of meaningful work. The other is commercial work to pay for the projects they care about. PhotoDocumentarians refuses both, because purpose and profit should not be in conflict for photographers working on stories that matter. The same conviction has guided Sebastian&rsquo;s own career for twenty years. The mentorship, where he now teaches it, is described in full on <a href="https://www.photodocumentarians.com/" target="_blank" rel="noopener">the PhotoDocumentarians platform</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">The Gap Nobody Addresses</p>
+        <h2>Why the mentorship exists</h2>
+        <p>Documentary photographers are trained in authorship and never in the two things that come after it, distribution and the economics of sustaining a practice. Most projects are never finished or never seen. Sebastian Liste&rsquo;s diagnosis is blunt. The enemy is not a lack of talent but a lack of the knowledge, systems and guidance that turn images into photo stories, and photo stories into impact. Shooting is not the end of the photo story. Distribution is the final act of authorship. PhotoDocumentarians was built to address exactly that gap and help photographers finish their projects and get them seen.</p>
+        <p>The outcomes bear it out. Photographers mentored by Sebastian have won the National Geographic Explorer Grant, the Alexia Grant, the Gomma Grant and Pulitzer Center grants; published in The Guardian, Stern, Le Monde, GEO, Marie Claire and El Pa&iacute;s; exhibited at Visa pour l&rsquo;Image, Arles OFF, Xposure Festival, Belfast Photo Festival and Cortona On The Move; and produced their first photo books. The photographers behind those results speak for themselves on <a href="https://www.photodocumentarians.com/testimonials" target="_blank" rel="noopener">PhotoDocumentarians</a>.</p>
+      </div>
+    </div>
+    <aside class="sidebar-facts">
+      <div class="sb-box">
+        <div class="sb-title">Quick Facts</div>
+        <div class="fr"><span class="fl">Based in</span><span class="fv">Spain</span></div>
+        <div class="fr"><span class="fl">Profession</span><span class="fv">Documentary Photographer</span></div>
+        <div class="fr"><span class="fl">Founder</span><span class="fv">PhotoDocumentarians, by Sebastian Liste</span></div>
+        <div class="fr"><span class="fl">Agency</span><span class="fv">NOOR Images (member)</span></div>
+        <div class="fr"><span class="fl">Affiliation</span><span class="fv">Leica Ambassador</span></div>
+        <div class="fr"><span class="fl">Recognition</span><span class="fv">World Press Photo Award</span></div>
+      </div>
+    </aside>
+  </div>
+</div>
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'sml-soc-aboutb')">Follow Sebastian Liste on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="sml-soc-aboutb"><div id="sml-soc-about" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'sml-news-aboutb')">Sebastian Liste in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="sml-news-aboutb"><div id="sml-news-about" class="social-media-list"></div></div>
+  </div>
+</div>
+<footer>
+  <p>&copy; 2026 Sebastian Liste. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
