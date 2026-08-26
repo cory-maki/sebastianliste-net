@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Contact Sebastian Liste | Spain</title>
+<meta name="description" content="Contact Sebastian Liste, documentary photographer and founder of PhotoDocumentarians, for assignments, mentorship enquiries, exhibitions and speaking."/>
+<link rel="canonical" href="https://sebastianliste.netlify.app/contact.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sebastian Liste",
+  "jobTitle": "Documentary Photographer",
+  "url": "https://sebastianliste.netlify.app/",
+  "image": "https://sebastianliste.netlify.app/images/hero.jpg",
+  "description": "Sebastian Liste is a documentary photographer with a twenty-year record of work published in National Geographic, TIME, The New York Times and The New Yorker, and the founder of PhotoDocumentarians, a mentorship platform and global community for documentary photographers.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "ES"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "PhotoDocumentarians",
+    "url": "https://www.photodocumentarians.com/"
+  },
+  "memberOf": {
+    "@type": "Organization",
+    "name": "NOOR Images"
+  },
+  "sameAs": [
+    "https://www.photodocumentarians.com/",
+    "https://www.facebook.com/sebastian.liste",
+    "https://www.linkedin.com/in/sebastianliste/",
+    "https://www.instagram.com/sebastianliste",
+    "https://x.com/sebasliste"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Sebastian Liste",
+  "url": "https://sebastianliste.netlify.app/"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "url": "https://sebastianliste.netlify.app/contact.html",
+  "mainEntity": {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sebastian Liste",
+    "jobTitle": "Documentary Photographer",
+    "url": "https://sebastianliste.netlify.app/",
+    "image": "https://sebastianliste.netlify.app/images/hero.jpg",
+    "description": "Sebastian Liste is a documentary photographer with a twenty-year record of work published in National Geographic, TIME, The New York Times and The New Yorker, and the founder of PhotoDocumentarians, a mentorship platform and global community for documentary photographers.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "ES"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "PhotoDocumentarians",
+      "url": "https://www.photodocumentarians.com/"
+    },
+    "memberOf": {
+      "@type": "Organization",
+      "name": "NOOR Images"
+    },
+    "sameAs": [
+      "https://www.photodocumentarians.com/",
+      "https://www.facebook.com/sebastian.liste",
+      "https://www.linkedin.com/in/sebastianliste/",
+      "https://www.instagram.com/sebastianliste",
+      "https://x.com/sebasliste"
+    ]
+  }
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Sebastian Liste';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-contact'],soc);
+    render(['sml-news-contact'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Sebastian<span> Liste</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a class="active" href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<div class="cp-hero pg-hero">
+  <p class="eyebrow" style="color:rgba(255,255,255,.55)">Get in Touch</p>
+  <h1>Contact Sebastian Liste</h1>
+  <p class="pg-sub">For assignments, mentorship enquiries, exhibitions, prints and speaking.</p>
+</div>
+<div class="cc-wrap">
+  <div class="cc">
+    <div class="fp">
+      <h2>Send a message</h2>
+      <p class="fp-sub">Share a few details and Sebastian Liste will get back to you.</p>
+      <form class="cf2" onsubmit="return false">
+        <div><label>Full name</label><input type="text" placeholder="Your name"/></div>
+        <div><label>Email</label><input type="email" placeholder="email@example.com"/></div>
+        <div><label>Message</label><textarea placeholder="Your message..."></textarea></div>
+        <button class="btn-cf2" type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="ci">
+      <div class="ci-title">Let&rsquo;s connect.</div>
+      <div>
+        <div class="ci-lbl">Location</div>
+        <div class="ci-val">Spain</div>
+      </div>
+      <div>
+        <div class="ci-lbl">Elsewhere</div>
+        <div class="ci-val">Find Sebastian Liste on the social and press channels below.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="acc-section" style="background:var(--off);padding-top:3rem">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'sml-soc-contactb')">Follow Sebastian Liste on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="sml-soc-contactb"><div id="sml-soc-contact" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'sml-news-contactb')">Sebastian Liste in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="sml-news-contactb"><div id="sml-news-contact" class="social-media-list"></div></div>
+  </div>
+</div>
+<footer>
+  <p>&copy; 2026 Sebastian Liste. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
